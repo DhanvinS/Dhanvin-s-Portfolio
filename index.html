@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dhanvin S — ML Safety & Security Engineer</title>
-  <meta name="description" content="Portfolio of Dhanvin S — machine learning, AI safety, red-teaming, and Trust &amp; Safety engineering." />
+  <title>Dhanvin S — Machine Learning Engineer, AI Evaluation & LLM Systems</title>
+  <meta name="description" content="Dhanvin S — Machine Learning Engineer focused on evaluation systems for LLMs and multimodal AI: benchmarking, regression detection, model-quality infrastructure, and failure analysis." />
+  <meta name="author" content="Dhanvin S" />
+  <meta property="og:title" content="Dhanvin S — ML Engineer, AI Evaluation & LLM Systems" />
+  <meta property="og:description" content="Evaluation systems for LLMs and multimodal AI: benchmarking, regression detection, and model-quality infrastructure." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -16,9 +20,10 @@
       <a href="#top" class="brand">DS<span>.</span></a>
       <nav class="nav-links">
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
+        <a href="#work">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -26,15 +31,36 @@
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">ML Safety &middot; Security &middot; Trust &amp; Safety</p>
+      <p class="eyebrow">Machine Learning Engineer &middot; AI Evaluation &amp; LLM Systems</p>
       <h1>Dhanvin S</h1>
       <p class="tagline">
-        I build systems that detect abuse, stress-test AI models, and make
-        machine learning deployments harder to break.
+        I build the evaluation systems that measure and improve model quality &mdash;
+        benchmarking, regression detection, and scalable infrastructure for
+        large language models and multimodal AI.
       </p>
       <div class="hero-cta">
         <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn ghost" href="Dhanvin_S_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
         <a class="btn ghost" href="https://github.com/DhanvinS" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Selected results">
+      <div class="metric">
+        <strong>3M+ / day</strong>
+        <span>events under end-to-end model-quality ownership in production</span>
+      </div>
+      <div class="metric">
+        <strong>1M+</strong>
+        <span>predictions analysed across 100+ slices; 17 hidden failure modes surfaced</span>
+      </div>
+      <div class="metric">
+        <strong>10K+ cases</strong>
+        <span>agentic-LLM eval harness, 15+ quality / groundedness / hallucination metrics</span>
+      </div>
+      <div class="metric">
+        <strong>0.87 AUROC</strong>
+        <span>open-set evaluation on held-out, never-before-seen attack families</span>
       </div>
     </section>
 
@@ -43,108 +69,194 @@
       <div class="about-grid">
         <div>
           <p>
-            I'm a Master's student in Machine Learning at the University of
-            Maryland with a background in security. My work sits at the
-            intersection of ML and safety: behavioral abuse detection,
-            adversarial red-teaming of LLMs and agents, and integrity /
-            Trust &amp; Safety tooling.
+            I'm a Machine Learning Engineer focused on <strong>AI evaluation and
+            model quality</strong>. My work is building the systems that tell teams
+            whether a model actually got better: evaluation frameworks,
+            benchmarks, regression tests, and the infrastructure to run them at
+            scale across LLMs and multimodal systems.
           </p>
           <p>
-            I like problems where an adversary is actively trying to defeat the
-            system &mdash; evasion-robust detectors, jailbreak taxonomies, and
-            multi-agent attack simulation.
+            I care about <strong>measurement validity</strong> &mdash; evaluating at
+            capability level instead of a single aggregate number, building
+            failure taxonomies, and catching the ways a benchmark can quietly
+            mislead you (label leakage, saturated evals, optimising a visible
+            proxy over the real objective). I've owned model quality in
+            production over millions of events a day, and I turn research ideas
+            into reproducible, containerised systems other people can use.
           </p>
         </div>
         <ul class="facts">
-          <li><span>Focus</span> AI safety, red-teaming, abuse detection</li>
-          <li><span>Education</span> M.S. Machine Learning, University of Maryland</li>
-          <li><span>Interests</span> Integrity &amp; Trust &amp; Safety engineering</li>
-          <li><span>Stack</span> Python, PyTorch, scikit-learn, Docker</li>
+          <li><span>Focus</span> Evaluation systems, benchmarking, regression detection</li>
+          <li><span>Domains</span> LLMs, agents, vision-language / multimodal</li>
+          <li><span>Experience</span> ML Engineer @ Accenture &middot; 3M+ events/day</li>
+          <li><span>Education</span> M.Sc. Applied ML, University of Maryland &middot; GPA 3.9</li>
+          <li><span>Stack</span> Python, C++, PyTorch, FastAPI, Spark, AWS, Docker/K8s</li>
         </ul>
       </div>
     </section>
 
-    <section id="experience" class="section">
+    <section id="work" class="section">
       <h2><span class="num">02</span> Experience</h2>
       <div class="timeline">
         <article class="entry">
           <div class="entry-head">
-            <h3>Machine Learning &mdash; Graduate Study &amp; Research</h3>
-            <span class="when">2025 &ndash; Present</span>
+            <h3>Machine Learning Engineer &mdash; Accenture</h3>
+            <span class="when">Aug 2023 &ndash; Jul 2025</span>
           </div>
-          <p class="where">University of Maryland</p>
-          <p>
-            Coursework and independent projects in algorithms, deep learning,
-            and applied ML security. Built the projects listed below as
-            end-to-end pipelines with simulation, modeling, evaluation, and
-            reporting.
-          </p>
+          <p class="where">Bengaluru, India &middot; Python, PyTorch, SQL, Spark, AWS, Docker, Kubernetes, MLflow, CI/CD</p>
+          <ul>
+            <li>
+              Owned model quality end to end over <strong>3M+ events per day</strong>:
+              evaluation design, calibration, and segment-level analysis across
+              10+ cohorts that surfaced gaps aggregate metrics concealed &mdash;
+              with holdout experiments, hypothesis testing, and confidence
+              intervals to establish whether a change actually helped.
+            </li>
+            <li>
+              Built scalable infrastructure for training, benchmarking, and
+              deployment: distributed Spark processing, MLflow tracking and model
+              versioning across 20+ iterations, containerised serving at
+              <strong>99.9% availability</strong>, and CI/CD with automated testing
+              that cut release time <strong>32%</strong>.
+            </li>
+            <li>
+              Built monitoring for drift (KS/PSI), calibration, and data-quality
+              failure wired to trigger retraining, and triaged production
+              regressions through root-cause analysis across data, features,
+              infrastructure, and model behaviour.
+            </li>
+            <li>
+              Wrote production Python with unit testing and code review, and made
+              the evaluation and monitoring tooling usable by others &mdash;
+              documented methodology, assumptions, and API contracts &mdash; cutting
+              onboarding from one week to two days.
+            </li>
+          </ul>
         </article>
         <article class="entry">
           <div class="entry-head">
-            <h3>Applied ML / Software</h3>
-            <span class="when">Edit me</span>
+            <h3>AI / LLM Intern &mdash; PES University C-IoT</h3>
+            <span class="when">Mar 2022 &ndash; Aug 2022</span>
           </div>
-          <p class="where">Add your role &amp; company</p>
-          <p>
-            Placeholder entry &mdash; update <code>index.html</code> with your
-            professional experience (role, dates, and 2&ndash;3 impact bullets).
-          </p>
+          <p class="where">Bengaluru, India &middot; Python, PyTorch, AWS, Docker</p>
+          <ul>
+            <li>
+              Fine-tuned RoBERTa for content-quality classification over
+              <strong>50K+ samples to 88% F1</strong>, and built automated
+              safety-evaluation pipelines across 2K+ hard adversarial examples
+              that lifted unsafe-content recall <strong>18%</strong>.
+            </li>
+          </ul>
         </article>
       </div>
     </section>
 
     <section id="projects" class="section">
       <h2><span class="num">03</span> Projects</h2>
+      <p class="section-lead">Evaluation systems &amp; LLM quality</p>
       <div class="cards">
+        <div class="card">
+          <h3>Multimodal VLM Evaluation &amp; Failure Analysis</h3>
+          <p>
+            Reusable evaluation framework for vision-language models over ~4,000
+            MMMU image-question pairs &mdash; new models and prompting strategies
+            drop in without touching the pipeline; cut manual review effort ~90%.
+            Evaluated at capability level: a 68% aggregate masked a ~20-point gap
+            between natural-image understanding (77%) and charts/tables (57%).
+            Built a failure taxonomy over ~600 errors, attributing ~60% to visual
+            grounding / OCR / chart interpretation and isolating perception &mdash;
+            not reasoning &mdash; as the bottleneck.
+          </p>
+          <div class="tags"><span>PyTorch</span><span>Hugging Face</span><span>VLMs</span><span>MMMU</span></div>
+        </div>
+        <div class="card">
+          <h3>LLM &amp; Agent Evaluation Harness</h3>
+          <p>
+            Evaluation system for agentic LLM workflows: 15+ metrics over 10K+
+            curated cases scoring response quality, groundedness, and
+            hallucination rate &mdash; combining LLM-as-judge with structured
+            metrics and semantic clustering of failures to surface modes the
+            metric suite wasn't yet measuring. Experiment logging and regression
+            tests across model, prompt, and retrieval configs, served through
+            FastAPI in containers so runs stay reproducible across machines.
+          </p>
+          <div class="tags"><span>LangChain</span><span>Anthropic / OpenAI APIs</span><span>FastAPI</span><span>LLM-as-judge</span></div>
+        </div>
+        <div class="card">
+          <h3>ML Insight &mdash; Model Quality &amp; Regression Analysis Platform</h3>
+          <p>
+            Infrastructure evaluating model behaviour across 100+ dynamic data
+            slices with drift detection, calibration, SHAP attribution, and
+            automated root-cause reporting. Across <strong>1M+ predictions</strong>
+            it surfaced 17 undetected high-error segments, cut slice-level error
+            23%, improved calibration from ECE 0.081 to 0.027, and cut debugging
+            from hours to under 15 minutes.
+          </p>
+          <div class="tags"><span>Python</span><span>XGBoost</span><span>FastAPI</span><span>PostgreSQL</span><span>AWS</span></div>
+        </div>
+        <a class="card" href="https://github.com/DhanvinS/Multi-Agent-Red-Team-Arena" target="_blank" rel="noopener">
+          <h3>Adversarial Benchmarking &amp; Measurement Validity</h3>
+          <p>
+            Adversarial evaluation pitting adaptive attacker agents against
+            defender classifiers across 8 harm categories with per-round Elo
+            ratings, plus open-set evaluation measuring generalisation to
+            held-out families at <strong>0.87 AUROC</strong>. Held first place for
+            a month on the public board of an agent-security competition
+            (OpenAI / Google / IEEE); the result didn't transfer to the private
+            board &mdash; a measurement-validity failure I traced to optimising a
+            visible proxy over the true objective. Separately found a
+            label-leakage bug inflating my own benchmark and rebuilt a saturated
+            eval with hard negatives.
+          </p>
+          <div class="tags"><span>PromptGuard</span><span>HDBSCAN</span><span>UMAP</span><span>Llama 3.x</span></div>
+        </a>
         <a class="card" href="https://github.com/DhanvinS/Behavioral-Abuse-Detection-for-AI-Platforms" target="_blank" rel="noopener">
           <h3>Behavioral Abuse Detection for AI Platforms</h3>
           <p>
             End-to-end pipeline: adaptive abuse simulation, multi-model
-            detection, and score fusion. Emphasis on evasion robustness and
-            account-takeover localization.
+            detection, and score fusion, evaluated for evasion robustness and
+            account-takeover localization rather than a single headline number.
           </p>
           <div class="tags"><span>Anomaly detection</span><span>Fusion</span><span>Adversarial ML</span></div>
         </a>
-        <a class="card" href="https://github.com/DhanvinS/Multi-Agent-Red-Team-Arena" target="_blank" rel="noopener">
-          <h3>Multi-Agent Red Team Arena</h3>
-          <p>
-            A simulation environment where attacker and defender agents compete,
-            with validity checks and metrics for measuring attack success.
-          </p>
-          <div class="tags"><span>LLM red-teaming</span><span>Multi-agent</span><span>Eval</span></div>
-        </a>
         <a class="card" href="https://github.com/DhanvinS/Jailbreak-Genome-LLM-Safety" target="_blank" rel="noopener">
-          <h3>Jailbreak Genome &mdash; LLM Safety</h3>
+          <h3>Jailbreak Genome &mdash; Novel LLM Attack Families</h3>
           <p>
-            A taxonomy and analysis of jailbreak techniques &mdash; decomposing
-            attacks into reusable "genes" to study what transfers across models.
+            Ingests real jailbreak corpora (JailbreakBench, Do-Not-Answer),
+            evolves them via 5 mutation strategies, and clusters with HDBSCAN +
+            UMAP to map attack-family structure. Open-set recognition of unseen
+            families reaches 0.87 AUROC &mdash; modelling how production systems
+            must generalise to novel, evolving distributions.
           </p>
-          <div class="tags"><span>Jailbreaks</span><span>Taxonomy</span><span>LLM safety</span></div>
+          <div class="tags"><span>HDBSCAN</span><span>UMAP</span><span>XGBoost</span><span>Open-set eval</span></div>
+        </a>
+      </div>
+
+      <p class="section-lead">Infrastructure &amp; research</p>
+      <div class="cards">
+        <a class="card" href="https://github.com/DhanvinS/Containerized_Real_Time_Stock_Prediction_System" target="_blank" rel="noopener">
+          <h3>Containerized Real-Time Prediction System</h3>
+          <p>
+            End-to-end MLOps: ingestion &rarr; SageMaker feature processing &rarr;
+            XGBoost quantile training with 50-trial Optuna search &rarr;
+            FastAPI/SageMaker inference &rarr; drift dashboard, full pipeline under
+            40 minutes. Automated daily retraining (EventBridge &rarr; Lambda) on
+            KS/PSI drift with zero-downtime blue/green redeploy. RMSE 0.87 vs 1.42
+            naive; load-tested at 100+ RPS, p95 &lt; 200 ms, 0% errors.
+          </p>
+          <div class="tags"><span>SageMaker</span><span>XGBoost</span><span>FastAPI</span><span>Optuna</span><span>AWS</span></div>
         </a>
         <a class="card" href="https://github.com/DhanvinS/Learned-Timestep-Sampling-in-Diffusion-Models" target="_blank" rel="noopener">
           <h3>Learned Timestep Sampling in Diffusion Models</h3>
           <p>
-            Replacing fixed diffusion timestep schedules with a learned sampler
-            to improve sample quality per compute budget.
+            A novel training method derived from first principles: a learnable
+            timestep distribution under importance weighting with entropy and
+            coverage constraints, evaluated over the full training trajectory
+            (lowest FID-AUC of all schedules) rather than a single checkpoint
+            &mdash; reaching FID 136.10 in 10K steps where uniform sampling does
+            not in 100K. Paper in preparation.
           </p>
-          <div class="tags"><span>Diffusion</span><span>PyTorch</span><span>Research</span></div>
-        </a>
-        <a class="card" href="https://github.com/DhanvinS/Text-to-Image_Synthesis_via_CLIP-Guided_Diffusion" target="_blank" rel="noopener">
-          <h3>CLIP-Guided Diffusion &mdash; Text-to-Image</h3>
-          <p>
-            Text-to-image synthesis steering a diffusion model with CLIP
-            guidance toward a text prompt.
-          </p>
-          <div class="tags"><span>CLIP</span><span>Generative</span><span>Vision</span></div>
-        </a>
-        <a class="card" href="https://github.com/DhanvinS/Containerized_Real_Time_Stock_Prediction_System" target="_blank" rel="noopener">
-          <h3>Containerized Real-Time Stock Prediction</h3>
-          <p>
-            A Dockerized service that ingests market data and serves real-time
-            predictions &mdash; end-to-end MLOps in miniature.
-          </p>
-          <div class="tags"><span>Docker</span><span>Streaming</span><span>MLOps</span></div>
+          <div class="tags"><span>PyTorch</span><span>UNet</span><span>Diffusion</span><span>Research</span></div>
         </a>
       </div>
       <p class="more"><a href="https://github.com/DhanvinS?tab=repositories" target="_blank" rel="noopener">More on GitHub &rarr;</a></p>
@@ -154,29 +266,70 @@
       <h2><span class="num">04</span> Skills</h2>
       <div class="skills-grid">
         <div>
-          <h4>Languages</h4>
-          <p>Python, SQL, Bash, C/C++ (familiar)</p>
+          <h4>Evaluation &amp; Analysis</h4>
+          <p>
+            Eval &amp; benchmark design (MMMU &amp; custom), capability-level and
+            multimodal evaluation, failure taxonomy &amp; error attribution,
+            LLM-as-judge, groundedness &amp; hallucination scoring, open-set
+            evaluation, regression testing, slice-based analysis, calibration
+            (ECE), drift detection (KS/PSI), SHAP, A/B testing
+          </p>
         </div>
         <div>
-          <h4>ML / Data</h4>
-          <p>PyTorch, scikit-learn, NumPy, pandas, Matplotlib</p>
+          <h4>ML &amp; LLM</h4>
+          <p>
+            PyTorch, TensorFlow, Hugging Face Transformers, vision-language
+            models, LangChain, FAISS, RAG, agentic workflows, prompt
+            engineering, supervised fine-tuning, LoRA/QLoRA/PEFT, distillation,
+            XGBoost, GNNs, diffusion &amp; generative models
+          </p>
         </div>
         <div>
-          <h4>Safety &amp; Security</h4>
-          <p>Adversarial ML, LLM red-teaming, abuse / anomaly detection, threat modeling</p>
+          <h4>Engineering</h4>
+          <p>
+            Python, C++17/20 (STL, RAII, atomics &amp; memory ordering, lock-free
+            structures, multithreading), Java, SQL, Bash, FastAPI, Docker,
+            Kubernetes, Linux, Git, unit testing, CI/CD, code review
+          </p>
         </div>
         <div>
-          <h4>Tooling</h4>
-          <p>Docker, Git, Linux, Jupyter, cloud basics</p>
+          <h4>Scale &amp; Cloud</h4>
+          <p>
+            Distributed data processing (Spark, Ray), AWS (SageMaker, Lambda,
+            S3), MLflow, Optuna, large-scale dataset curation &amp; versioning,
+            model serving &amp; monitoring
+          </p>
         </div>
       </div>
     </section>
 
+    <section id="education" class="section">
+      <h2><span class="num">05</span> Education</h2>
+      <div class="timeline">
+        <article class="entry">
+          <div class="entry-head">
+            <h3>University of Maryland, College Park &mdash; M.Sc. Applied Machine Learning</h3>
+            <span class="when">Expected May 2027</span>
+          </div>
+          <p class="where">GPA 3.9 / 4.0</p>
+        </article>
+        <article class="entry">
+          <div class="entry-head">
+            <h3>PES University, Bengaluru &mdash; B.Tech. Computer Science &amp; Engineering</h3>
+            <span class="when">May 2024</span>
+          </div>
+          <p class="where">GPA 8.5 / 10</p>
+        </article>
+      </div>
+    </section>
+
     <section id="contact" class="section contact">
-      <h2><span class="num">05</span> Contact</h2>
-      <p>Open to roles in AI safety, integrity, and Trust &amp; Safety engineering.</p>
+      <h2><span class="num">06</span> Contact</h2>
+      <p>Open to Machine Learning Engineer roles in AI evaluation, model quality, and LLM / multimodal systems.</p>
       <div class="contact-links">
-        <a class="btn primary" href="mailto:dhanvinsreddy@gmail.com">Email me</a>
+        <a class="btn primary" href="mailto:dhanvinsreddy@gmail.com">dhanvinsreddy@gmail.com</a>
+        <a class="btn ghost" href="Dhanvin_S_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/dhanvin-s-8ab99b220" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn ghost" href="https://github.com/DhanvinS" target="_blank" rel="noopener">GitHub</a>
       </div>
     </section>

@@ -81,6 +81,41 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 }
 .hero-cta { margin-top: 36px; display: flex; gap: 14px; flex-wrap: wrap; }
 
+/* Metrics strip */
+.metrics {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 8px 24px 8px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.metric {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 18px 16px;
+}
+.metric strong {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--accent-2);
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: -0.5px;
+}
+.metric span { display: block; margin-top: 8px; font-size: 0.82rem; color: var(--text-dim); line-height: 1.5; }
+
+.section-lead {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-dim);
+  margin: 8px 0 18px;
+}
+.cards + .section-lead { margin-top: 40px; }
+
 .btn {
   display: inline-block;
   padding: 11px 22px;
@@ -126,9 +161,12 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 }
 .entry-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
 .entry-head h3 { font-size: 1.05rem; }
-.when { font-family: "JetBrains Mono", monospace; font-size: 0.82rem; color: var(--text-dim); }
-.where { color: var(--accent); font-size: 0.9rem; margin: 4px 0 10px; }
+.when { font-family: "JetBrains Mono", monospace; font-size: 0.82rem; color: var(--text-dim); white-space: nowrap; }
+.where { color: var(--accent); font-size: 0.88rem; margin: 4px 0 12px; }
 .entry code { background: var(--bg); padding: 1px 6px; border-radius: 6px; font-size: 0.85em; }
+.entry ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; }
+.entry ul li { font-size: 0.92rem; color: var(--text-dim); }
+.entry ul li strong { color: var(--text); font-weight: 600; }
 
 /* Cards */
 .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
@@ -182,12 +220,17 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 860px) {
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 720px) {
   .nav-links { display: none; }
   .about-grid { grid-template-columns: 1fr; }
   .cards { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .section { padding: 56px 0; }
+  .entry-head { flex-direction: column; gap: 2px; }
 }
 
 /* Reveal animation */
